@@ -1,5 +1,5 @@
-const {defineConfig} = require('@vue/cli-service')
-module.exports = defineConfig({
-  publicPath: `/invoice_management_app/`
-  transpileDependencies: true
-})
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+      ? '/invoice_management_app/'
+      : '/',
+}
