@@ -169,7 +169,12 @@ export default {
       if (type === 'bread') {
         return 'шматочків';
       }
-      if (type === 'soup' || type === 'grill' || type === 'kebab' || type === 'second_course') {
+      if (type === 'soup'
+          || type === 'grill'
+          || type === 'kebab'
+          || type === 'second_course'
+          || type === 'appetizer'
+          || type === 'dessert') {
         return 'г';
       }
       return 'шт';
