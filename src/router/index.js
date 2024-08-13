@@ -4,12 +4,12 @@ import InputPage from '../components/InputPage.vue';
 
 const routes = [
     {
-        path: '/',
+        path: '/invoice_management_app',
         name: 'StartButton',
         component: WelcomeComponent
     },
     {
-        path: '/input',
+        path: '/invoice_management_app/input',
         name: 'InputPage',
         component: InputPage
     }
