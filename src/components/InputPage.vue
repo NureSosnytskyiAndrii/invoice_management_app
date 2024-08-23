@@ -14,7 +14,8 @@
           @click="prepareToAddToBill(item)"
           style="cursor: pointer;"
       >
-        {{ item.name }} - {{ calculatePrice(item, item.base_volume) }} UAH за {{ item.base_volume }} {{ getUnit(item.type) }}
+        {{ item.name }} - {{ calculatePrice(item, item.base_volume) }} UAH за {{ item.base_volume }}
+        {{ getUnit(item.type) }}
       </li>
     </ul>
     <p v-if="searchQuery && !filteredItems.length" class="text-danger">Нет результатов</p>
@@ -92,12 +93,23 @@
       <button @click="saveBill" class="btn btn-primary ">Сохранить счет</button>
       <button @click="clearBill" class="btn btn-outline-danger m-2">Очистить счет</button>
     </div>
+    <button @click="toggleManualForm" class="btn btn-outline-primary mt-3">
+      Добавить вручную
+    </button>
+    <manual-form-add
+        v-if="showManualForm"
+        @add-manual-item="addItem"
+    />
   </div>
 </template>
 <script>
 import menuData from '@/data/menu.json';
+import ManualFormAdd from "@/components/ManualFormAdd";
 
 export default {
+  components: {
+    ManualFormAdd,
+  },
   name: 'InputPage',
   data() {
     return {
@@ -106,7 +118,8 @@ export default {
       billItems: [],
       selectedItem: null,
       selectedVolume: null,
-      serviceCharge: 0
+      serviceCharge: 0,
+      showManualForm: false,
     };
   },
   computed: {
@@ -118,6 +131,21 @@ export default {
     }
   },
   methods: {
+    toggleManualForm() {
+      this.showManualForm = !this.showManualForm;
+    },
+    addItem(newItem) {
+      if (newItem) {
+        const itemToAdd = {
+          name: newItem.name,
+          price: newItem.price,
+          volume: newItem.volume,
+          unit: newItem.unit,
+        };
+        this.billItems.push(itemToAdd);
+        this.saveBill();
+      }
+    },
     prepareToAddToBill(item) {
       this.selectedItem = item;
       if (item.type === 'drink'

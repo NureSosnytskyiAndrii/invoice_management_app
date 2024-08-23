@@ -346,85 +346,85 @@
       "name": "Омлет з овочами",
       "price": 210,
       "type": "second_course",
-      "base_volume": 210
+      "base_volume": 250
     },
     {
       "name": "Яєшня (ковбаса, помідор, сало)",
       "price": 210,
       "type": "second_course",
-      "base_volume": 210
+      "base_volume": 250
     },
     {
       "name": "Хачапурі, піца",
       "price": 380,
       "type": "second_course",
-      "base_volume": 380
+      "base_volume": 400
     },
     {
       "name": "Деруни зі сметаною",
       "price": 220,
       "type": "second_course",
-      "base_volume": 220
+      "base_volume": 300
     },
     {
       "name": "Деруни зі шкварками",
       "price": 260,
       "type": "second_course",
-      "base_volume": 260
+      "base_volume": 300
     },
     {
       "name": "Деруни з грибами",
       "price": 260,
       "type": "second_course",
-      "base_volume": 260
+      "base_volume": 300
     },
     {
       "name": "Картопля по – домашньому",
       "price": 180,
       "type": "second_course",
-      "base_volume": 180
+      "base_volume": 350
     },
     {
       "name": "Картопля з грибами",
       "price": 210,
       "type": "second_course",
-      "base_volume": 210
+      "base_volume": 300
     },
     {
       "name": "Картопля фрі",
       "price": 180,
       "type": "second_course",
-      "base_volume": 180
+      "base_volume": 200
     },
     {
       "name": "Картопляне пюре",
       "price": 180,
       "type": "second_course",
-      "base_volume": 180
+      "base_volume": 300
     },
     {
       "name": "Рис",
       "price": 180,
       "type": "second_course",
-      "base_volume": 180
+      "base_volume": 300
     },
     {
       "name": "Гречка",
       "price": 180,
       "type": "second_course",
-      "base_volume": 180
+      "base_volume": 300
     },
     {
       "name": "Вареники з картоплею або капустою",
       "price": 210,
       "type": "second_course",
-      "base_volume": 210
+      "base_volume": 250
     },
     {
       "name": "Вареники з м’ясом",
       "price": 230,
       "type": "second_course",
-      "base_volume": 230
+      "base_volume": 250
     },
     {
       "name": "Пельмені",
