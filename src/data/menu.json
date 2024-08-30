@@ -80,7 +80,7 @@
     },
     {
       "name": "Овочева нарізка",
-      "price": 250,
+      "price": 240,
       "type": "appetizer",
       "base_volume": 200
     },
@@ -441,7 +441,7 @@
     {
       "name": "Карасі",
       "price": 210,
-      "type": "second_course",
+      "type": "grill",
       "base_volume": 150
     },
     {
@@ -501,7 +501,7 @@
     {
       "name": "Карасі в сметані",
       "price": 240,
-      "type": "second_course",
+      "type": "grill",
       "base_volume": 200
     },
     {
